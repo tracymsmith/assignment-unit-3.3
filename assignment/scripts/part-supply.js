@@ -5,39 +5,39 @@ console.log('****** Part Supply *******');
 
 // 1. Create a variable called 'partsNeeded' with a value of the number 40.
 console.log('1. Create partsNeeded:');
+
 let partsNeeded = 40;
 
 console.log( 'partsNeeded:', partsNeeded );
 
 
+
 // 2. Create a variable called 'supplyChanges' whose value is an array containing
 //    the following numbers: 3, 5, -6, 0, 7, 11.
 console.log('2. Create supplyChanges:');
+
 let supplyChanges = [ 3, 5, -6, 0, 7, 11 ];
 
 console.log( 'supplyChanges:', supplyChanges );
-
-///Below is another way to console.log answer to Question 2 above
-//console.log( `supplyChanges: ${supplyChanges}` );
-
-
 
 // 3. Create a variable called 'secondItem' and assign it the value of the second
 //    item in the 'supplyChanges' array.
 console.log('3. Access the second value of supplyChanges:');
 
-console.log( 'secondItem:', supplyChanges[1]);
+let secondItem = supplyChanges[1];
+
+console.log( 'secondItem:', secondItem );
+
 
 
 // 4. The last value in the 'supplyChanges' array was added by mistake.
 //    Remove it from the array and store it inside a new variable called 'removedItem'.
 console.log('4. Remove the last value from supplyChanges:');
 
+
 let removedItem = supplyChanges.pop();
 
 console.log( 'removedItem:', removedItem );
-
-console.log( 'supplyChanges:' , supplyChanges );
 
 
 
@@ -57,7 +57,54 @@ console.log( 'supplyChanges:' , supplyChanges);
 //      - If the value is a negative number, push it into the 'negatives' array.
 //      - If the value is a zero, push it into the 'zeroes' array.
 console.log('6. Looping through supplyChanges to populate arrays with positive, negative, and zero values:');
+// example formula from Carlos during office hours:
+// for (let i = 0; ii < cars.length; i++) {
+// console.log(cars[I]);
+// }
 
+
+  let positives = [];
+  let negatives = [];
+  let zeroes = [];
+
+  for (let i = 0; i < supplyChanges.length; i++) {
+    console.log('for loop', supplyChanges[i]);
+    if (supplyChanges[i] > 0) {
+      console.log('positives:', supplyChanges[i]);
+    }
+  }
+
+  for (let i = 0; i < supplyChanges.length; i++) {
+    console.log('for loop', supplyChanges[i]);
+    if (supplyChanges[i] < 0) {
+      console.log('negatives:', supplyChanges[i]);
+    }
+  }
+
+  for (let i = 0; i < supplyChanges.length; i++) {
+    console.log('for loop', supplyChanges[i]);
+    if (supplyChanges[i] == 0) {
+      console.log('zeroes:', supplyChanges[i]);
+    }
+  }
+
+  
+//   if ( supplyChanges[i] > 0) {
+//   console.log( 'positives:', supplyChanges(i));}
+// };
+
+// for (let i = 0; i < supplyChanges.length; i++ ); {
+// console.log( positives [I]);
+// }
+// 
+// // let arr = 
+// [12, 34, 13, -1, -4, 45, -55, -66];
+ 
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > 0) {
+//         console.log(arr[i]);
+//     }
+// }
 
 
 
